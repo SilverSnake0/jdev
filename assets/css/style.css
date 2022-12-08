@@ -382,3 +382,26 @@ span:nth-child(26) {
         display: block;
     }
 }
+
+@media only screen and (max-width: 1080px) {
+    /* CSS rules for devices with a screen width of 1080 pixels or less */
+    .body-text {
+        color:#000
+    }
+
+    h1 {
+        color:#000
+    }
+
+    h2 {
+        color:#000
+    }
+
+    li {
+        color:#000
+    }
+    
+    name-title {
+        color:#000
+    }
+}
