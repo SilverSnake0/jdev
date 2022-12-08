@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* Set the style for the navigation bar */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Set the style for the links in the navigation bar */
+nav a {
+    color: #fff;
+    text-decoration: underline overline #000000;
+    font-size: 16px;
+}
+
+body {
+    background-image: url(assets\img\website-bg.jpg);
+    background-size: contain;
+    background-position: center;
+    resize: both;
+    overflow: auto;
+    width: auto;
+    height: auto;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+}
+
+.container {
+    position: absolute; 
+    width: 100%; 
+    height: 90%; 
+    top: 90%; 
+    left: 0;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    z-index: 0;
+    top: 1;
+    left: 0;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Montserrat Medium";
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-align: end;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    color: #fff;
+    text-align: end;
+}
+
+li {
+    font-family: "Montserrat Medium";
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    text-align: end;
+}
+
+a {
+    color: #00B5E2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 80%;
+    color: #fff
+}
+
+Footer {
+    width: 100%;
+    height: 0px;
+    padding: 5px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    color: #000000;
+    background-color: #000000;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    margin-bottom: 1em;
+    z-index: -2;
+    opacity: 50%;
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 350px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.name-title {
+    border-right: solid 3px rgba(0, 255, 0, .75);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+}
+
+/* Animation */
+.name-title {
+    animation: animated-text 4s steps(29, end) 1s 1 normal both,
+        animated-cursor 600ms steps(29, end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 472px;
+    }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+    from {
+        border-right-color: rgba(0, 238, 255, 0.966);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.body-text {
+    font-family: "Montserrat Medium";
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+    100% {
+        transform: scale(1);
+    }
+}
+
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(19) {
+    animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(20) {
+    animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(21) {
+    animation: fade-in 0.8s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(22) {
+    animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(23) {
+    animation: fade-in 0.8s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(24) {
+    animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(25) {
+    animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(26) {
+    animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        display: block;
+    }
+
+    .nav-item.dropdown {
+        display: block;
+    }
+}
