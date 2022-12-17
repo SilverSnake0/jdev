@@ -15,7 +15,6 @@
 </head>
 
 <body>
-    <script src="assets\js\scripts.js"></script>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand" href="#">James Lin</a>
         <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarDropdown"
@@ -70,11 +69,14 @@
                     <span>web</span>
                     <span>applications</span>
                     <span>that</span>
-                    <span onmouseover="showGraph()" onmouseout="hideGraph()"><em>solve</em></span>
+                    <span id="solve"><em>solve</em></span>
                     <span>real-world</span>
                     <span>problems.</span>
                 </p>
-                <canvas id="myChart" style="display: none;"></canvas>
+                <!-- Added the canvas element for the circle chart -->
+                <canvas id="myChart" style="visibility: hidden;"></canvas>
+                <script src="assets\js\circle"></script>
+                <script src="assets\js\scripts.js"></script>
             </div>
             <div class="col-sm-6">
                 <h2 id="my-skills"">My Skills</h2>
