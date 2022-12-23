@@ -146,6 +146,7 @@ Footer {
     text-align: center;
     padding: 10px;
     margin-left: 350px;
+    transition: transform 0.5s;
 }
 
 .glow-on-hover:before {
@@ -172,6 +173,10 @@ Footer {
 .glow-on-hover:active:after {
     background: transparent;
 }
+
+.glow-on-hover:hover {
+    transform: scale(1.1); 
+  }
 
 .glow-on-hover:hover:before {
     opacity: 1;
