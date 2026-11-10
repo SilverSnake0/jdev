@@ -15,3 +15,6 @@ Serve locally with `python -m http.server 8793`. GitHub Pages publishes the repo
 Private implementations are described without source code, internal URLs, or business records. The dashboard capability map is illustrative, not a product screenshot. SpacePlan MR is explicitly in development and simulator-tested, not hardware-certified. The public lease calculator link points to the original calculator, not the private dashboard modules.
 
 Legacy assets are retained but no longer loaded by the new page.
+
+## Visual showcase update
+Six dedicated case-study pages, privacy-reviewed demo screenshot, fictional report illustrations, simulator screenshot reel, locally hosted OFL fonts (licenses alongside files), parallax, an automatically animated ambient background, muted viewport-aware reel playback, pause persistence, reduced-motion support, keyboard-accessible lightbox, active navigation, and reveal/hover effects. Media provenance: assets/showcase/README.md. The simulator reel is editorial motion over a still, not recorded interaction.

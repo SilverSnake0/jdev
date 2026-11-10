@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600"><rect width="960" height="600" rx="22" fill="#e7ece1"/><g font-family="Arial,sans-serif">
+<text x="42" y="50" font-size="13" fill="#526452" letter-spacing="2">ILLUSTRATIVE WORKFLOW · FICTIONAL TERMS</text>
+<rect x="38" y="80" width="410" height="470" rx="12" fill="#fffefa"/>
+<text x="64" y="122" font-size="13" fill="#627062">SOURCE / SAMPLE LEASE</text>
+<text x="64" y="165" font-size="25" fill="#17352d">From clause to evidence.</text>
+<text x="64" y="211" font-size="15" fill="#53665b">Section 4. Base Rent</text>
+<rect x="60" y="228" width="365" height="104" rx="6" fill="#edf3d8"/>
+<text x="74" y="259" font-size="17" fill="#17352d">Annual base rent is $60,000,</text>
+<text x="74" y="287" font-size="17" fill="#17352d">payable in monthly installments</text>
+<text x="74" y="315" font-size="17" fill="#17352d">of $5,000.</text>
+<path d="M64 374H400M64 397H380M64 420H397M64 443H335" stroke="#dde3d7" stroke-width="9"/>
+<text x="64" y="510" font-size="13" fill="#657263">Fictional excerpt · page 2</text>
+<rect x="478" y="80" width="444" height="470" rx="12" fill="#17352d"/>
+<text x="504" y="122" font-size="13" fill="#d5ec87">REVIEW / STRUCTURED SUGGESTION</text>
+<text x="504" y="170" font-size="25" fill="#fffefa">Check the source. Then apply.</text>
+<text x="504" y="229" font-size="14" fill="#bbcbb8">ANNUAL BASE RENT</text><text x="504" y="268" font-size="36" fill="#fffefa">$60,000</text>
+<text x="504" y="314" font-size="15" fill="#d4dfca">Monthly equivalent: $5,000</text>
+<rect x="504" y="350" width="390" height="81" rx="6" fill="#2d493b"/>
+<text x="523" y="382" font-size="15" fill="#edf3db">Source quote retained</text><text x="523" y="407" font-size="14" fill="#cad8c1">Section 4 · page 2 · review required</text>
+<rect x="504" y="463" width="245" height="46" rx="5" fill="#d5ec87"/><text x="524" y="492" font-size="14" fill="#17352d">Human review before application</text>
+</g></svg>
