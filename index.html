@@ -1,108 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets\css\style.css">
-
-    <!-- Include the Chart.js library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>James Lin — AI Automation & Real Estate Technology</title>
+<meta name="description" content="James Lin builds AI-assisted real estate tools, workflow automation, and practical business software. Explore selected projects and 14+ years of brokerage experience.">
+<meta name="theme-color" content="#102d2a">
+<meta property="og:title" content="James Lin — From industry insight to working software">
+<meta property="og:description" content="AI automation, real estate technology, and practical business systems. Selected work by James Lin.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://silversnake0.github.io/jdev/">
+<link rel="canonical" href="https://silversnake0.github.io/jdev/"><link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="#">James Lin</a>
-        <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarDropdown"
-            aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#about-me">About Me</a>
-                        <a class="dropdown-item" href="#my-skills">My Skills</a>
-                        <a class="dropdown-item" href="#my-projects">My Projects</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <canvas id="particle-bg"></canvas>
-    <img class="bg-img" src="assets/img/website-bg.jpg" alt="Background showing a residential building in daytime with floors that can rotate 360 degrees. Below the building is a reflection of the building with a starry night sky.">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h1  class="name-title" id="about-me" >James Lin</h1>
-                <p class="body-text">
-                    <span>I</span>
-                    <span>am</span>
-                    <span>a</span>
-                    <span>developer</span>
-                    <span>with</span>
-                    <span>experience</span>
-                    <span>in</span>
-                    <span>Python,</span>
-                    <span>Javascript,</span>
-                    <span>HTML,</span>
-                    <span>and</span>
-                    <span>CSS.</span>
-                    <span>My</span>
-                    <span>passion</span>
-                    <span>is</span>
-                    <span>to</span>
-                    <span>create</span>
-                    <span>clean</span>
-                    <span>and</span>
-                    <span>user-friendly</span>
-                    <span>web</span>
-                    <span>applications</span>
-                    <span>that</span>
-                    <span id="solve"><em>solve</em></span>
-                    <span>real-world</span>
-                    <span>problems.</span>
-                </p>
-                <!-- Added the canvas element for the circle chart -->
-                <canvas id="myChart" style="visibility: hidden;"></canvas>
-                <script src="assets\js\circle.js"></script>
-                <script src="assets\js\scripts.js"></script>
-            </div>
-            <div class="col-sm-6">
-                <h2 id="my-skills">My Skills</h2>
-                <ul>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                </ul>
-                <h2 id="my-projects">My Projects</h2>
-                <ul>
-                    <li class="glow-on-hover"><a href="https://github.com/SilverSnake0">Github Page</a></li>
-                    <li class="glow-on-hover"><a href="https://replit.com/@silverstorm/Choose-Your-Own-Adventure-Game-Python?v=1">Text Game</a></li>
-                    <li class="glow-on-hover"><a href="https://github.com/SilverSnake0/Personal-Website-Scraping-with-Pandas-and-BeautifulSoup">Web Scraping</a></li>
-                    <li class="glow-on-hover"><a href="https://replit.com/@silverstorm/Estimated-Commercial-Rent-Calculation-Sheet?v=1">Real Estate App</a></li>
-                    <li class="glow-on-hover"><a href="https://replit.com/@silverstorm/Typing-Speed-Test?v=1">Typing Speed Test</a></li>
-                    <li class="glow-on-hover"><a href="https://github.com/SilverSnake0/File-Automated-Assistant-Mover">File Organizer</a></li>
-                    <li class="glow-on-hover"><a href="https://replit.com/@silverstorm/Hangman-Game?v=1">Hangman Game</a></li>
-                    <li class="glow-on-hover"><a href="https://replit.com/@silverstorm/Blackjack-Card-Game-With-Betting-System?v=1">Blackjack</a></li>
-                    <li class="glow-on-hover"><a href="https://github.com/SilverSnake0/Tennis-Ace-Machine-Learning-Project?v=1">Machine Learning</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</body>
-<footer>
-    <p class="copyright">Copyright © 2022 James Lin | E-mail Contact: silversnake@duck.com</p>
-</footer>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><a class="brand" href="#top" aria-label="James Lin home">JL<span>JAMES LIN</span></a><nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-resume" href="assets/James_Lin_Real_Estate_AI_Resume.pdf">Resume ↗</a></nav></header>
+<main id="main">
+<section id="top" class="hero">
+<div><p class="eyebrow"><span class="dot"></span> AI AUTOMATION & REAL ESTATE TECHNOLOGY</p>
+<h1>Industry insight.<br>Working software.</h1>
+<p class="intro">I’m James. I turn the everyday complexity of commercial real estate into practical tools—connecting brokerage experience, AI, and thoughtful automation.</p>
+<div class="actions"><a class="button" href="#work">Explore selected work <span>↘</span></a><a class="text-link" href="assets/James_Lin_Real_Estate_AI_Resume.pdf">View my resume ↗</a></div>
+<p class="hero-note">Washington, DC metro area <span> / </span> Building for real-world workflows</p></div>
+<aside class="system" aria-label="Illustrative workflow from transaction documents to human-reviewed results">
+<div class="system-top"><span>FROM INFORMATION TO ACTION</span><span>01—04</span></div>
+<div class="flow"><div><span>01</span><p>Understand the problem<small>Transactions · people · decisions</small></p></div><i aria-hidden="true">↓</i><div><span>02</span><p>Structure the information<small>Documents · data · evidence</small></p></div><i aria-hidden="true">↓</i><div><span>03</span><p>Build the workflow<small>AI assistance · automation · validation</small></p></div><i aria-hidden="true">↓</i><div class="flow-last"><span>04</span><p>Keep people in control<small>Review · judgment · action</small></p></div></div>
+<p class="system-note">My approach: useful systems, grounded in how people actually work.</p></aside>
+</section>
+<div class="credentials"><p><strong>14+ years</strong><span>Commercial real estate</span></p><p><strong>MD · DC · VA</strong><span>Associate Broker licenses</span></p><p><strong>Domain + development</strong><span>From business need to implementation</span></p></div>
+<section id="work" class="section">
+<div class="section-heading"><div><p class="eyebrow">SELECTED WORK / 2026</p><h2>Built around real problems.</h2></div><p>Business platforms, evidence-aware AI tools, and experiments beyond the browser.</p></div>
+<article class="flagship">
+<div class="flagship-copy"><div class="tags"><span class="badge light">DEPLOYED · PRIVATE IMPLEMENTATION</span><span>01 / FLAGSHIP</span></div><h3>CapStar Agent Dashboard</h3><p class="project-lead">One workspace for the moving parts of a brokerage.</p><p>A centralized platform that brings CRM, document generation, financial calculators, property marketing, and transaction records into the same agent workflow.</p><div class="tech">Google Apps Script · JavaScript · Google Workspace · AI integrations</div>
+<details><summary>Read the case study <span>+</span></summary><div class="case"><h4>The problem</h4><p>Agents work across documents, spreadsheets, calculations, and shared records. Disconnected steps create repeated data entry and inconsistent workflows.</p><h4>My contribution</h4><p>Designed and built a role-based dashboard with agent-specific access, administrator tools, reusable document workflows, and branded reporting. Connected day-to-day brokerage requirements with software implementation and iterative testing.</p><h4>What it supports</h4><p>LOIs and forms, lease calculations, CRM records, marketing materials, transaction information, and usage reporting. AI assists selected tasks while agents retain review and decision-making responsibility.</p><p class="disclosure">Internal business application. Source code and authenticated systems are not publicly linked.</p></div></details></div>
+<div class="workspace-visual" aria-label="Conceptual map of dashboard capabilities, not a product screenshot"><div class="visual-bar"><span class="tiny-grid">▦</span> BROKERAGE WORKSPACE <span>↗</span></div><div class="visual-grid"><div><b>01</b><strong>Relationships</strong><small>Contacts & CRM</small></div><div><b>02</b><strong>Documents</strong><small>LOIs & forms</small></div><div><b>03</b><strong>Analysis</strong><small>Lease economics</small></div><div><b>04</b><strong>Operations</strong><small>Records & reporting</small></div></div><div class="visual-bottom"><span class="dot"></span> AGENT WORKFLOWS + ADMINISTRATOR CONTROLS</div><p>Capability map · illustrative, not a live product view</p></div>
+</article>
+<div class="project-grid">
+<article class="project"><div class="tags"><span class="badge">PRIVATE IMPLEMENTATION</span><span>02</span></div><h3>AI Contract & Transaction Analysis</h3><p>Turn lengthy leases and agreements into reviewable comparisons and structured transaction information—with source evidence kept close.</p><div class="tech">PDF / DOCX · AI workflows · Quote validation</div><details><summary>Read the case study <span>+</span></summary><div class="case"><h4>Evidence before action</h4><p>Built contract-comparison and transaction-extraction workflows that preserve source quotations and page references. Added checks on quoted text, separate handling of conflicting suggestions, and review before applying values.</p><h4>Designed for imperfect conditions</h4><p>Implemented resumable extraction and recovery paths for provider failures. Tested late-document change detection using a 52-page lease and a synthetic amendment.</p><p class="disclosure">Part of the CapStar platform. Automated tests do not establish legal accuracy; source documents and AI suggestions require human review.</p></div></details></article>
+<article class="project"><div class="tags"><span class="badge">PUBLIC SOURCE + INTERNAL TOOLS</span><span>03</span></div><h3>Commercial Lease & Investment Tools</h3><p>Translate deal assumptions into rent schedules, commission calculations, financial comparisons, and clear client-facing reports.</p><div class="tech">Python · JavaScript · Financial modeling · PDF reporting</div><details><summary>Read the case study <span>+</span></summary><div class="case"><h4>From calculation to decision support</h4><p>Created an original Python commercial rent calculator and expanded into dashboard tools covering lease schedules, cap rates, lease versus purchase, and lease-alternative comparisons.</p><p>Structured inputs, visible assumptions, AI-assisted LOI prefilling, and agent review connect document terms with useful analysis.</p><a class="text-link" href="https://github.com/SilverSnake0/Estimated-Commercial-Rent-Calculation-Sheet">View original calculator source ↗</a><p class="disclosure">The public repository is the original calculator, not the source for the newer private dashboard modules.</p></div></details></article>
+<article class="project"><div class="tags"><span class="badge">PRIVATE IMPLEMENTATION</span><span>04</span></div><h3>Real Estate Market Intelligence</h3><p>Bring business discovery and scattered restaurant-space opportunities into structured, searchable research workflows.</p><div class="tech">Python · Google Places API · Google Sheets · Data processing</div><details><summary>Read the case study <span>+</span></summary><div class="case"><h4>Less repetitive research</h4><p>Built business-discovery and public-website research workflows, alongside an email-to-database pipeline for second-generation restaurant spaces. Structured information makes market and opportunity research easier to filter and revisit.</p><h4>Scope</h4><p>These are existing research and intake tools, not a claim that every contact is qualified or interested in a transaction. The proposed shared dashboard lead-finder tab is a separate, unimplemented concept.</p><p class="disclosure">Private implementation. No lead database, client communications, or API credentials are published here.</p></div></details></article>
+<article class="project"><div class="tags"><span class="badge">CUSTOM WORKFLOWS ON OPENCLAW</span><span>05</span></div><h3>Multi-Agent Business Automation</h3><p>Coordinate research, reporting, and execution through specialist roles, explicit handoffs, and verification steps.</p><div class="tech">OpenClaw · Python · APIs · Workflow orchestration</div><details><summary>Read the case study <span>+</span></summary><div class="case"><h4>Coordination, not just conversation</h4><p>Designed agent roles and task pipelines for intake, routing, research, status reporting, and durable handoffs. Established reusable workflows that preserve context and require checks before work is marked complete.</p><h4>My contribution</h4><p>The role architecture, integrations, operating workflows, and verification practices built around OpenClaw. OpenClaw itself is an existing framework, not my original software.</p><p class="disclosure">Private configuration and operational workflows. Internal instructions, accounts, and private data are not exposed.</p></div></details></article>
+<article class="project wide"><div><div class="tags"><span class="badge experimental">IN DEVELOPMENT · SIMULATOR-TESTED</span><span>06 / EXPLORATION</span></div><h3>SpacePlan MR</h3><p>Explore how mixed reality can make room planning more intuitive: place furniture and wall art, edit layouts, and return to saved arrangements.</p><div class="tech">Unity · Meta XR SDK · C# · 3D asset workflows</div></div><details><summary>Explore the project <span>+</span></summary><div class="case"><p>Developing a mixed-reality room-planning workflow with gaze and pinch interactions, furniture placement, layout persistence, and guided room-readiness states.</p><p>Simulator workflows have exercised chair and wall-art placement, save/reopen behavior, and recovery scenarios. Work continues on presentation, reliability, and performance.</p><p class="disclosure">Prototype—not a released product. Physical room sensing, device performance, and real-world anchor behavior remain unverified. No public source or live demo is provided.</p></div></details></article>
+</div>
+</section>
+<section id="about" class="section about">
+<div><p class="eyebrow">THE PERSPECTIVE BEHIND THE WORK</p><h2>A broker’s context.<br>A builder’s mindset.</h2><p class="about-intro">The best tools begin with understanding the work they are supposed to improve.</p><p>Since 2012, I’ve worked in commercial real estate at CapStar Commercial Realty, advising retail and restaurant clients on leasing, sales, site selection, financial analysis, and negotiation.</p><p>That experience informs what I build: practical systems that organize information, make assumptions visible, and reduce repetitive work without replacing professional judgment.</p></div>
+<div class="about-facts"><div><p class="eyebrow">EXPERIENCE</p><h3>Associate Vice President</h3><p>CapStar Commercial Realty<br>July 2012–present · Gaithersburg, Maryland</p></div><div><p class="eyebrow">A PRACTICAL RESULT</p><h3>~60 minutes → ~10 minutes</h3><p>Reporting and invoice preparation time after introducing a structured deal-tracking and invoice automation workflow.</p></div><div><p class="eyebrow">EDUCATION & CREDENTIALS</p><h3>University of Maryland Baltimore County</h3><p>B.S., Multidisciplinary Studies (STEM)<br>Associate Broker: Maryland, Washington, DC & Virginia<br>ICSC member · CCIM Candidate</p></div></div>
+</section>
+<section class="section skills"><div><p class="eyebrow">TOOLKIT</p><h2>The right tool for the workflow.</h2></div><div class="skill-columns"><div><h3>Build & integrate</h3><p>Python · JavaScript · Google Apps Script · SQL · HTML & CSS · REST APIs</p></div><div><h3>Automate & analyze</h3><p>AI-assisted workflows · OpenClaw · Document processing · Google Workspace · Excel</p></div><div><h3>Explore & prototype</h3><p>Unity · C# · Meta XR · 3D workflows · Interaction prototyping</p></div></div></section>
+<section class="earlier"><details><summary>Earlier projects & learning work <span>+</span></summary><div class="earlier-links"><a href="https://github.com/SilverSnake0/File-Automated-Assistant-Mover">File Automation Assistant ↗</a><a href="https://github.com/SilverSnake0/Tennis-Ace-Machine-Learning-Project">Tennis Regression Project ↗</a><a href="https://github.com/SilverSnake0/Typing-Speed-Test">Typing Speed Test ↗</a><a href="https://github.com/SilverSnake0/Choose-Your-Own-Adventure-Game-Python">Python Adventure Game ↗</a></div></details></section>
+<section id="contact" class="contact"><p class="eyebrow">LET’S CONNECT</p><h2>Real problems.<br>Useful possibilities.</h2><p>Interested in real estate technology, AI-assisted workflows, or practical business automation?</p><div class="actions"><a class="button cream" href="mailto:silversnake@duck.com">Email James ↗</a><a href="assets/James_Lin_Real_Estate_AI_Resume.pdf">View resume ↗</a><a href="https://github.com/SilverSnake0">GitHub ↗</a></div></section>
+</main><footer><span>© 2026 James Lin</span><span>Built with purpose. Kept practical.</span><a href="#top">Back to top ↑</a></footer>
+</body></html>
